@@ -173,3 +173,23 @@ footer a {
 .footer-links a {
     margin: 0 10px;
 }
+
+.css img:hover{
+    transform: scale(1.1);
+    border-color: #e21887;
+}
+
+.btn1:hover{
+	transform: scale(1.1); 
+	background-color: #e21887;
+}
+
+.btn2:hover{
+	transform: scale(1.1); 
+	background-color: #e21887;
+}
+
+.btn3:hover{
+	transform: scale(1.1); 
+	background-color: #e21887;
+}
