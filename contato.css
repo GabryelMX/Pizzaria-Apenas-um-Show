@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+
+header div.logo {
+    float: left;
+}
+
+header nav.desktop {
+    float: right;
+    position: relative;
+    top: 40px;
+}
+
+header nav.desktop ul {
+    list-style-type: none;
+}
+
+header nav.desktop ul li {
+    float: left;
+    font-size: 23px;
+    padding: 0 30px;
+    font-style: italic;
+}
+
+header nav.desktop a {
+    color: black;
+    text-decoration: none;
+}
+
+.line-titulo {
+    /* Trocamos por 1400 para seguir com o mesmo tamanho do nosso contexto padrão da classe container! */
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+/* Estilização dos rótulos e campos de entrada */
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Estilização dos botões */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilização para o rótulo do gênero */
+label[for="genero"] {
+    margin-bottom: 0;
+}
+
+/* Estilização para o campo de seleção do gênero */
+#genero {
+    width: 100%;
+}
+
+/* Estilização para o cabeçalho */
+h1 {
+    text-align: center;
+}
+
+/* Estilização para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
