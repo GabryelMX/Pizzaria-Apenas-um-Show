@@ -1248,3 +1248,89 @@ section.veiculos-destaque .container{
 		width: 100%;
 	}
 }
+
+/* Define um estilo para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; /* Centraliza o conteúdo das células */
+	margin: 0 auto; /* Centraliza a tabela */
+}
+
+/* Define o estilo das células do cabeçalho */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Define o estilo das células do corpo da tabela */
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Define um estilo para as linhas ímpares (opcional) */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Define um estilo para o cabeçalho */
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center; /* Centraliza o texto do cabeçalho */
+	border-bottom: 1px solid #ddd; /* Adiciona uma linha na parte inferior do título */
+    margin-bottom: 20px; /* Adiciona um espaço entre o título e a tabela */
+}
+
+/* Define um estilo para o contêiner */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Define um estilo para o logotipo */
+.logo {
+    float: left;
+}
+
+/* Define um estilo para o menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Define um estilo para o menu de navegação em dispositivos móveis */
+.mobile {
+    display: none;
+}
+
+/* Define um estilo para limpar floats */
+.clear {
+    clear: both;
+}
+
+/* Define um estilo para dispositivos com largura máxima de 768px */
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
