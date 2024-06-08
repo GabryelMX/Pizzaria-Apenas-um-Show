@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('O nome do cliente não pode ser vazio.');
         return; // Interrompe o processo se o nome do cliente estiver vazio
     }
-
         // Calcula o total da encomenda
         const total = unitPrice * quantity;
 

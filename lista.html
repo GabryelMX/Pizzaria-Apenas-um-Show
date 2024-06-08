@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.jpg" />
+        </div><!--logo-->
+        <nav class="desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a style="color:#EB2D2D;" href="lista.html">Lista</a></li>
+                <li><a href="venda.html">Venda</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav><!--desktop-->
+        <nav class="mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a style="color:#EB2D2D;" href="lista.html">Lista</a></li>
+                <li><a href="venda.html">Venda</a></li>
+            </ul>
+        </nav><!--mobile-->           
+        <div class="clear"></div>
+    </div><!--container-->
+</header>
+<main>
+    <div class="container">
+        <h1 class="titulo">Lista de Encomendas</h1>
+    </div>
+    <hr class = linha_sup>
+    <div class="Filtrar">
+        <label class="filtrar-tabela" for="filtraTabela">Filtrar:</label>
+        <input type="text" id="filtrar-tabela" placeholder="Digite o nome do cliente" class="filtro">
+    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unitário</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tbody>
+                    <tr class="cliente">
+                        <td class="info-nome">Luyra</th>
+                        <td class="info-produto">Volkswagen karmann ghia 1</td>
+                        <td class="quant">2</td>
+                        <td class="valor">80000,00</td>
+                        <td class="total">-</td>
+                    </tr>
+                     <tr class="cliente">
+                        <td class="info-nome">Gabryel</th>
+                        <td class="info-produto">Volkswagen Voyage 1995</td>
+                        <td class="quant">-2</td>
+                        <td class="valor">80000,00</td>
+                        <td class="total">-</td>
+                    </tr>
+                    <tr class="cliente">
+                        <td class="info-nome">Matheus</th>
+                        <td class="info-produto">Volkswagen 1600 TL 2</td>
+                        <td class="quant">2</td>
+                        <td class="valor">-2</td>
+                        <td class="total">-</td>
+                    </tr>
+                    <tr class="cliente">
+                        <td class="info-nome">David</th>
+                        <td class="info-produto">Peça do carro</td>
+                        <td class="quant">30
+
+                        </td>
+                        <td class="valor">3</td>
+                        <td class="total">-</td>
+            </tbody>
+    </table>
+                <button id="buscar-encomendas" class="bot-search">Buscar Encomendas</button>
+            </div>
+        </table>
+    </div><!-- container -->
+    <section>
+        <div class="container">
+            <h1>Adicionar nova encomenda</h1>
+            <form id="order-form">
+                <label for="client-name">Nome do cliente:</label>
+                <input type="text" id="client-name" name="client-name" required>
+    
+                <label for="val_unit">R$ Unitário:</label>
+                <input type="number" step="0.01" id="val_unit" name="val_unit" required>
+    
+                <label for="quantity">Quantidade encomendada:</label>
+                <input type="number" id="quantity" name="quantity" required>
+    
+                <label for="product">Produto:</label>
+                <select id="product" name="product">
+                    <option value="Volkswagen karmann ghia">Volkswagen karmann ghia 1</option>
+                    <option value="Volkswagen 1600 TL">Volkswagen 1600 TL 2</option>
+                    <option value="Volkswagen Voyage 1995">Volkswagen Voyage 1995 3</option>
+                    <option value="Peça do carro">peça do carro</option>
+                </select>
+                <button type="submit">Adicionar</button>
+            </form>
+            <div id="piechart_3d" class="graph"></div>
+    </section>
+</main>
+<script src="assets/js/remover_linha.js"></script>
+        <script src="assets/js/add_tabela.js"></script>
+        <script src="assets/js/calcula_total.js"></script>
+        <script src="buscar.js"></script>
+        <script src="buscar_encomenda.js"></script>
+        <script src="assets/js/filtrar.js"></script>
+</body>
+</html>
